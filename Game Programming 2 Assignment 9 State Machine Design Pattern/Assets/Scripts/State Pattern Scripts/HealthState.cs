@@ -7,8 +7,7 @@
 using UnityEngine;
 public abstract class HealthState : MonoBehaviour
 {
-    public abstract void FullHealth();
-    public abstract void HalfHealth();
-    public abstract void LowHealth();
-    public abstract void NoHealth();
+    public abstract void FullHealth(); // This heals the player
+    public abstract void HalfHealth(); // This hurts the player but increases infection rate.
+    public abstract void NoHealth(); // This allos the player to cleanse a small portion of infection.
 }
