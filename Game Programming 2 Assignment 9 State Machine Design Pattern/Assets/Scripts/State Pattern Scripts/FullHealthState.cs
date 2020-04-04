@@ -12,11 +12,13 @@ using UnityEngine.UI;
 public class FullHealthState : HealthState
 {
     public GameController gameCon;
+    public HealthStateManager healthStateManager;
 
     private void Start()
     {
         //gameCon = GameObject.Find("Game Controller").GetComponent<GameController>();
         gameCon = gameObject.GetComponent<GameController>();
+        healthStateManager = gameObject.GetComponent<HealthStateManager>();
     }
 
     public override void FullHealth()
@@ -28,12 +30,16 @@ public class FullHealthState : HealthState
 
     public override void HalfHealth()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("You currently have full health");
+        if (gameCon.healthBar.value <= 75)
+        {
+            healthStateManager.currentState = healthStateManager.halfHealth;
+        }
     }
 
     public override void NoHealth()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("You are not dead yet!");
     }
 
     //public override void FullHealth()

@@ -951,7 +951,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stay At Home!!
+  m_Text: I Need Toilet Paper!
 --- !u!222 &1551635501
 CanvasRenderer:
   m_ObjectHideFlags: 0

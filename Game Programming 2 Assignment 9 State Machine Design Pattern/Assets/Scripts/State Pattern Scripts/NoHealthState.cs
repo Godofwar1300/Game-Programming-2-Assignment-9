@@ -5,28 +5,28 @@ using UnityEngine;
 public class NoHealthState : HealthState
 {
 
-    GameController gameCon;
+    public GameController gameCon;
+    public HealthStateManager healthStateManager;
 
     private void Start()
     {
-        //gameCon = GameObject.Find("Game Controller").GetComponent<GameController>();
         gameCon = gameObject.GetComponent<GameController>();
+        healthStateManager = gameObject.GetComponent<HealthStateManager>();
     }
 
     public override void FullHealth()
     {
-        Debug.Log("You're not at full health anymore!");
+        Debug.Log("You are dead and cannot heal.");
     }
 
     public override void HalfHealth()
     {
-        Debug.Log("You are no longer at half health");
+        Debug.Log("You are dead and cannot heal.");
     }
 
     public override void NoHealth()
     {
         gameCon.descriptionText.text = "You have died";
-        gameCon.StartCoroutine(gameCon.GameOver());
     }
 
     //public override void fullHealthMessage()
