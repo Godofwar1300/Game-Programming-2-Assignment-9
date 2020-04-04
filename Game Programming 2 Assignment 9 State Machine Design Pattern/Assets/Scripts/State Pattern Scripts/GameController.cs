@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
     public GameObject gameOverPanel;
 
     public Slider healthBar;
-    public int maxHealthValue = 100;
     public Text healthText;
 
     [Range(0, 100)]
@@ -138,6 +137,7 @@ public class GameController : MonoBehaviour
             stayAtHomeButton.interactable = false;
             disinfectButton.interactable = false;
             shopButton.interactable = false;
+            stayHomeWasPressed = true;
             StartCoroutine(GameOver());
         }
     }

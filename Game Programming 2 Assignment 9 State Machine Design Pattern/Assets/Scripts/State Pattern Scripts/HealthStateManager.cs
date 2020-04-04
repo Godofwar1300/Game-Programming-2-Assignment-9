@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Christopher Green)
+* (HealthStateManager.cs)
+* (Assignment 9)
+* (This script manages initializing the different health states.)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

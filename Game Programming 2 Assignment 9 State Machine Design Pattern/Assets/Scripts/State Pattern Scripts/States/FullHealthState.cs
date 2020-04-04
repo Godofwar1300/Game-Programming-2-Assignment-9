@@ -1,6 +1,6 @@
 ﻿/*
 * (Christopher Green)
-* (FullHealth.cs)
+* (FullHealthState.cs)
 * (Assignment 9)
 * (This script defines what the FullHealth state does.)
 */
@@ -40,21 +40,5 @@ public class FullHealthState : HealthState
     public override void NoHealth()
     {
         Debug.Log("You are not dead yet!");
-    }
-
-    //public override void FullHealth()
-    //{
-    //    Debug.Log("fulfullHealthMessage is being called!");
-    //    gameCon.descriptionText.text = "You are at full / a high level of health, good job!\n\nA reminder of you current wellbeing:\nHealth: %" + gameCon.healthBar.value + "\tInfection: %" + gameCon.infectionPercentage;
-    //}
-
-    //public override void HalfHealth()
-    //{
-    //    Debug.Log("You are still within the full health range");
-    //}
-
-    //public override void NoHealth()
-    //{
-    //    Debug.Log("You are at full health, you cannot die with full health!");
-    //}  
+    }  
 }

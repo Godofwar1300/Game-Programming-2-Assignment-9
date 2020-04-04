@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Christopher Green)
+* (NoHealthState.cs)
+* (Assignment 9)
+* (This script defines what the NoHealth state does.)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

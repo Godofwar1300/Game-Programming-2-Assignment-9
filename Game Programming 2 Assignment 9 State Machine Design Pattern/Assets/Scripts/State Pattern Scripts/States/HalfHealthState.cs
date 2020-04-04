@@ -1,8 +1,8 @@
 ﻿/*
 * (Christopher Green)
-* (HalfHealth.cs)
+* (HalfHealthState.cs)
 * (Assignment 9)
-* (This script defines what the HalfHealth state does.)
+* (This script defines what the HalfHealthState state does.)
 */
 using System.Collections;
 using System.Collections.Generic;
